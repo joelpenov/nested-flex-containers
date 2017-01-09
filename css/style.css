@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*	RESET 	*/
+ 
+ html, *, *:before, *:after{
+ 	box-sizing: border-box;
+ }
+
+ body{
+ 	background: #e6f0a3; /* Old browsers */
+	background: -moz-linear-gradient(left, #e6f0a3 0%, #d2e638 63%, #c3d825 66%, #dbf043 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #e6f0a3 0%,#d2e638 63%,#c3d825 66%,#dbf043 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #e6f0a3 0%,#d2e638 63%,#c3d825 66%,#dbf043 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=1 ); /* IE6-9 */
+ }
+
+ /*main-flex-container*/
+ .main-flex-container{
+ 	display: flex;
+ 	font-family: sans-serif;
+ 	justify-content: center;
+ }
+
+/* .image-container/*/
+ .image-container{
+ 	max-width: 1000px;
+ }
+
+ .image-container > img{
+ 	border-radius: 5px;
+ 	max-width: 100%;
+ }
+
+/* STYLE */
+
+.slider-controls-container li a{
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	padding: 20px 5px;
+}
+
+.slider-controls-container li a:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+
+.slider-controls-container li a span{
+	text-align: center;	
+}
+
+.slider-controls-container li.arrow-control a span {
+	font-size: 40px;
+}
+
+/* STYLE */
+
+/* Flex */
+
+.slider-controls-container ul {
+	display: flex;
+}
+
+.slider-controls-container ul li{
+	flex: 2;
+	display: flex;
+}
+
+.slider-controls-container li.arrow-control{
+	flex: 1;
+}
+
+.slider-controls-container ul li a{
+	flex: 1;
+	display:flex;
+	align-items: center;
+}
+
+.slider-controls-container li a span{
+	flex: 1;
+}
+
+/* Flex */
